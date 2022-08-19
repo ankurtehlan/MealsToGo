@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, StatusBar } from "react-native";
 import { Searchbar } from "react-native-paper";
+import { RestaurantInfo } from "../components/restaurant-info.components";
 
 export const RestaurantsScreen = () => {
   const [search, setSearch] = useState(null);
@@ -17,6 +18,9 @@ export const RestaurantsScreen = () => {
       </View>
       <View style={styles.secondView}>
         <Text>{search}</Text>
+      </View>
+      <View>
+        <RestaurantInfo />
       </View>
     </>
   );
